@@ -16,9 +16,7 @@ int histogram(vector<int> &arr) {
 
   for (int i = 1; i < n; i++) {
     while (!st.empty() and arr[i] < arr[st.top()]) {
-      int el = arr[st.top()]; // current bar to be removed and whose ans will be
-                              // calculated
-
+      int el = arr[st.top()]; // current bar to be removed and whose ans will be calculated
       st.pop();
       int nsi = i;
       int psi = (st.empty()) ? (-1) : st.top();
