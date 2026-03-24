@@ -52,7 +52,6 @@ void display() {
 };
 
 int main() {
-  int v;
   cin >> v;
 
   graph.resize(v, list<int>());
